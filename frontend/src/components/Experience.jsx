@@ -46,7 +46,7 @@ export const Experience = () => {
           {experienceData.map((exp, index) => (
             <div 
               key={index}
-              className="bg-paper-bg rounded-2xl border border-paper-border p-6 sm:p-8 shadow-paper-sm transition-all hover:shadow-paper-md"
+              className="bg-paper-bg rounded-2xl border border-paper-border p-5 sm:p-8 shadow-paper-sm transition-all hover:shadow-paper-md"
             >
               {/* Header Bar */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-paper-border">

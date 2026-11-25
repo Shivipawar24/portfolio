@@ -14,10 +14,10 @@ export const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="mb-10">
+        <div className="mb-8 sm:mb-10">
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-xs uppercase font-bold tracking-widest text-terracotta">
-             / / About Me
+            <span className="font-mono text-xs uppercase font-bold tracking-widest text-terracotta">
+              // ABOUT ME
             </span>
           </div>
           <h2 className="heading-editorial text-3xl sm:text-4xl md:text-5xl">
@@ -68,8 +68,8 @@ export const About = () => {
           </div>
 
           {/* Right: Clean Overview Card with Location */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative bg-paper-card rounded-2xl border border-paper-border p-6 sm:p-7 shadow-paper-md">
+          <div className="lg:col-span-5 relative w-full">
+            <div className="relative bg-paper-card rounded-2xl border border-paper-border p-5 sm:p-7 shadow-paper-md">
               
               {/* Paperclip decoration */}
               <div className="absolute -top-4 right-8">
@@ -93,7 +93,7 @@ export const About = () => {
               <div className="py-4 space-y-3 text-sm">
                 <div className="flex items-start justify-between gap-4">
                   <span className="text-charcoal-muted text-xs uppercase tracking-wider font-medium">Experience</span>
-                  <span className="font-medium text-charcoal-dark text-right">
+                  <span className="font-medium text-charcoal-dark text-right text-xs sm:text-sm">
                     2 Years (Professional)
                   </span>
                 </div>
@@ -114,16 +114,16 @@ export const About = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 sm:gap-4">
                   <span className="text-charcoal-muted text-xs uppercase tracking-wider font-medium">Frontend</span>
-                  <span className="font-medium text-charcoal-dark text-right text-xs">
+                  <span className="font-medium text-charcoal-dark sm:text-right text-xs">
                     React.js, Tailwind, TanStack Query, Redux
                   </span>
                 </div>
 
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 sm:gap-4">
                   <span className="text-charcoal-muted text-xs uppercase tracking-wider font-medium">Backend & MERN</span>
-                  <span className="font-medium text-terracotta text-right text-xs">
+                  <span className="font-medium text-terracotta sm:text-right text-xs">
                     Node.js, Express.js, REST APIs, MongoDB
                   </span>
                 </div>

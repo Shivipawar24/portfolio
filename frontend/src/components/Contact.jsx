@@ -41,7 +41,7 @@ export const Contact = () => {
             <div className="pt-2">
               <a
                 href={`mailto:${personalInfo.email}?subject=Opportunity%20Inquiry%20-%20Shivani%20Pawar`}
-                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-terracotta hover:bg-terracotta-hover text-white font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-xs hover:shadow-md group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg bg-terracotta hover:bg-terracotta-hover text-white font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-xs hover:shadow-md group"
               >
                 <span>SEND AN EMAIL</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -57,7 +57,7 @@ export const Contact = () => {
                 className="inline-flex items-center gap-2 font-mono text-xs text-charcoal-dark hover:text-terracotta font-medium transition-colors cursor-pointer group"
                 title="Click to copy email address"
               >
-                <span className="underline underline-offset-2 decoration-paper-border group-hover:decoration-terracotta">
+                <span className="underline underline-offset-2 decoration-paper-border group-hover:decoration-terracotta break-all">
                   {personalInfo.email}
                 </span>
                 {copied ? (
@@ -80,7 +80,7 @@ export const Contact = () => {
               {/* Email */}
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="flex items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group"
+                className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group gap-1 sm:gap-4"
               >
                 <span className="font-mono text-xs uppercase tracking-wider text-charcoal-muted font-semibold w-24">
                   EMAIL
@@ -95,7 +95,7 @@ export const Contact = () => {
                 href={personalInfo.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group"
+                className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group gap-1 sm:gap-4"
               >
                 <span className="font-mono text-xs uppercase tracking-wider text-charcoal-muted font-semibold w-24">
                   LINKEDIN
@@ -110,7 +110,7 @@ export const Contact = () => {
                 href={personalInfo.socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group"
+                className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group gap-1 sm:gap-4"
               >
                 <span className="font-mono text-xs uppercase tracking-wider text-charcoal-muted font-semibold w-24">
                   GITHUB
@@ -123,7 +123,7 @@ export const Contact = () => {
               {/* Phone */}
               <a
                 href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`}
-                className="flex items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group"
+                className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 hover:bg-paper-card transition-colors group gap-1 sm:gap-4"
               >
                 <span className="font-mono text-xs uppercase tracking-wider text-charcoal-muted font-semibold w-24">
                   PHONE

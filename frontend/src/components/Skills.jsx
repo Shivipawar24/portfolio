@@ -131,7 +131,7 @@ export const Skills = () => {
         </div>
 
         {/* Compact Split Technical Matrix Card */}
-        <div className="bg-paper-card rounded-2xl border border-paper-border p-6 sm:p-8 lg:p-9 shadow-paper-sm">
+        <div className="bg-paper-card rounded-2xl border border-paper-border p-5 sm:p-8 lg:p-9 shadow-paper-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             
             {/* Left Column: Core Proficiencies */}
@@ -148,8 +148,8 @@ export const Skills = () => {
               <div className="space-y-4">
                 {coreProficiencies.map((item, idx) => (
                   <div key={idx} className="space-y-1.5 group">
-                    <div className="flex items-baseline justify-between text-xs">
-                      <div>
+                    <div className="flex items-baseline justify-between text-xs gap-2">
+                      <div className="min-w-0">
                         <span className="font-semibold text-charcoal-dark text-sm sm:text-base font-sans group-hover:text-terracotta transition-colors">
                           {item.name}
                         </span>
@@ -157,7 +157,7 @@ export const Skills = () => {
                           {item.subtext}
                         </p>
                       </div>
-                      <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-paper-bg border border-paper-border text-charcoal-muted font-medium">
+                      <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-paper-bg border border-paper-border text-charcoal-muted font-medium shrink-0">
                         {item.status}
                       </span>
                     </div>
