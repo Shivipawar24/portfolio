@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #24221E;
+  }
+  
+  body {
+    background-color: #F2EDE3;
+    overflow-x: hidden;
+  }
+
+  /* Custom smooth scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #E8E0D2;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4BAA9;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B56D4C;
+  }
+}
+
+@layer components {
+  /* Editorial heading style */
+  .heading-editorial {
+    @apply font-serif tracking-tight text-charcoal-dark font-medium;
+  }
+
+  /* Hand-drawn sketch border effect */
+  .sketch-border {
+    border: 1.5px solid #24221E;
+    box-shadow: 2px 2px 0px #24221E;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .sketch-border:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0px #24221E;
+  }
+
+  /* Subtle tape effect for photos / gallery cards */
+  .washi-tape {
+    position: relative;
+  }
+  .washi-tape::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 70px;
+    height: 20px;
+    background: rgba(165, 168, 139, 0.35);
+    backdrop-filter: blur(2px);
+    border-left: 2px dashed rgba(255, 255, 255, 0.5);
+    border-right: 2px dashed rgba(255, 255, 255, 0.5);
+    z-index: 10;
+  }
+
+  /* Paper deck container */
+  .paper-card {
+    @apply bg-paper-card border border-paper-border rounded-xl shadow-paper-sm transition-all duration-300;
+  }
+
+  .paper-card:hover {
+    @apply shadow-paper-md border-charcoal-faint;
+  }
+}
+
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

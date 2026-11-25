@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#F2EDE3"/>
+  <path d="M12 48C20 48 24 38 32 38C40 38 44 48 52 48" stroke="#A5A88B" stroke-width="3" stroke-linecap="round"/>
+  <!-- Pen Nib / Brush -->
+  <path d="M22 14L42 14L46 26L32 46L18 26L22 14Z" fill="#B56D4C"/>
+  <circle cx="32" cy="27" r="4" fill="#F2EDE3"/>
+  <line x1="32" y1="31" x2="32" y2="44" stroke="#24221E" stroke-width="2"/>
+  <!-- Sparkle -->
+  <path d="M48 16L50 21L55 23L50 25L48 30L46 25L41 23L46 21L48 16Z" fill="#24221E"/>
+</svg>
